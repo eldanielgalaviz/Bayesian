@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../static/css/alertaEmailStyles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Verificación correo</title>
+        <link rel="icon" href="static/img/logo.png" />
+    </head>
+    <body>
+        <div class="colores">
+            <div class="primer-contenedor"></div>
+
+            <div class="segundo-contenedor"></div>
+        </div>
+
+        <div class="centrado-carta">
+            <form class="card" method="POST" action="../alertaEmail.php">
+                <div class="contenido-card">
+                    <img
+                        class="exclamacion"
+                        src="../static/img/exclamacion-png.png"
+                        alt="img"
+                    />
+                    <h2 class="contenido">Email de Verificación</h2>
+                    <p class="contenido">
+                        Para garantizar la seguridad recibirá un correo de
+                        BayesianPoker con la finalidad de verificar su correo.
+                    </p>
+                </div>
+                <input
+                    type="text"
+                    class="input"
+                    name="codigoValidacionEmail"
+                    placeholder="0000"
+                />
+                <input type="submit" value="verificar codigo" class="btn" />
+            </form>
+        </div>
+
+        <!-- <script src="/js/scripts1.js"></script> -->
+    </body>
+</html>

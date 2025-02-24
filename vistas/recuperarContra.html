@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../static/css/recuperarContraStyles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recuperar contraseña</title>
+        <link rel="icon" href="/static/img/logo.png" />
+    </head>
+
+    <body>
+        <div class="colores">
+            <div class="primer-contenedor">
+                <a href="../iniciarSesion.php" class="btn-imagen">
+                    <img
+                        src="../static/img/flecha-png.png"
+                        alt="Botón con imagen"
+                    />
+                </a>
+            </div>
+
+            <div class="segundo-contenedor"></div>
+        </div>
+
+        <div class="centrado-carta">
+            <form class="card" method="POST" action="../recuperarContra.php">
+                <div class="contenido-card">
+                    <img
+                        class="exclamacion"
+                        src="../static/img/correo-png.png"
+                        alt="img"
+                    />
+                    <p class="contenido">
+                        Ingresar el correo electrónico con el que se registró
+                        para recuperar su contraseña.
+                    </p>
+                </div>
+                <input
+                    type="email"
+                    class="input correo"
+                    name="email"
+                    id="inputEmail"
+                    placeholder="E-mail"
+                />
+                <button onclick="validarEmail()" class="btn">Siguiente</button>
+            </form>
+        </div>
+
+        <script src="../static/js/scripts2.js"></script>
+    </body>
+</html>

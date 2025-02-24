@@ -1,0 +1,163 @@
+:root {
+	--azul-bajo: #4da8da;
+	--azul-fuerte: #696969;
+	--azul-medio: #007cc7;
+	--color-letra: #eefbfb;
+}
+
+.mensaje-error {
+	background-color: #f44336;
+	border: 1px solid #f44336;
+	color: #000;
+	padding: 1%;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.colores {
+	display: grid;
+	grid-template-rows: 40fr 60fr; /* Establecer la proporción del alto de las filas en 40% y 60% respectivamente */
+	height: 100vh; /* Establecer la altura al 100% de la ventana del navegador */
+}
+
+.primer-contenedor {
+	background-color: var(--azul-bajo);
+	height: 100%; /* Establecer la altura al 100% para ocupar el espacio total de la fila */
+}
+
+.segundo-contenedor {
+	background-color: var(--azul-fuerte);
+	height: 100%; /* Establecer la altura al 100% para ocupar el espacio total de la fila */
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--azul-medio);
+	border: 2px solid #eefbfb;
+	border-radius: 24px;
+	gap: 20px;
+	height: 500px;
+	width: 300px;
+	border-radius: 24px;
+}
+
+.card input::placeholder {
+	color: var(--color-letra);
+	text-indent: 30px; /* Ajustar el valor según tu preferencia */
+}
+
+.img-user {
+	width: 40%;
+	height: 20%;
+	border-radius: 50%;
+}
+
+.centrado-carta {
+	position: absolute; /* Establecer posición absoluta para el contenedor hijo */
+	top: 50%; /* Centrar verticalmente en la mitad de la altura del contenedor padre */
+	left: 50%; /* Centrar horizontalmente en la mitad del ancho del contenedor padre */
+	transform: translate(-50%, -50%);
+}
+
+.btn-imagen {
+	display: inline-block; /* Asegura que el enlace se comporte como un bloque de nivel y ocupe el ancho de su contenido */
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn-imagen img {
+	width: 15%; /* Ajusta el tamaño de la imagen al 100% del ancho del enlace */
+	height: auto; /* Ajusta la altura de la imagen automáticamente para mantener la proporción */
+	padding-top: 18%;
+	padding-left: 5%;
+}
+
+.input {
+	width: 80%;
+	height: 5%;
+	border: none;
+	border-radius: 24px;
+	padding: 10px;
+	font-size: 20px;
+	outline: none;
+	background: rgba(238, 251, 251, 0.53);
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 29px;
+	color: var(--color-letra);
+}
+
+.btn {
+	width: 70%;
+	height: 10%;
+	border: none;
+	border-radius: 24px;
+	padding: 10px;
+	font-size: 20px;
+	outline: none;
+	background: rgba(238, 251, 251, 0.53);
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+	color: var(--color-letra);
+	cursor: pointer;
+	text-align: center;
+}
+
+.usuario {
+	background-image: url('/static/img/usuario-png.png');
+	background-repeat: no-repeat;
+	background-position: left 10px center; /* Mover la imagen a la izquierda con un margen de 10px y centrada verticalmente */
+	background-size: 20px 20px;
+	text-align: left; /* Ajusta el valor de text-align para que el texto aparezca a la derecha */
+	text-indent: 30px;
+}
+
+.contra {
+	background-image: url('/static/img/candado-png.png');
+	background-repeat: no-repeat;
+	background-position: left 10px center; /* Mover la imagen a la izquierda con un margen de 10px y centrada verticalmente */
+	background-size: 20px 20px;
+	text-align: left; /* Ajusta el valor de text-align para que el texto aparezca a la derecha */
+	text-indent: 30px;
+}
+
+.contra-confirmar {
+	background-image: url('/static/img/candado-png.png');
+	background-repeat: no-repeat;
+	background-position: left 10px center; /* Mover la imagen a la izquierda con un margen de 10px y centrada verticalmente */
+	background-size: 20px 20px;
+	text-align: left; /* Ajusta el valor de text-align para que el texto aparezca a la derecha */
+	text-indent: 30px;
+}
+
+.correo {
+	background-image: url('/static/img/correo-png.png');
+	background-repeat: no-repeat;
+	background-position: left 10px center; /* Mover la imagen a la izquierda con un margen de 10px y centrada verticalmente */
+	background-size: 20px 20px;
+	text-align: left; /* Ajusta el valor de text-align para que el texto aparezca a la derecha */
+	text-indent: 30px;
+}
+
+.icono {
+	position: fixed;
+	right: 10%;
+	top: 234px;
+	width: 8%;
+	cursor: pointer;
+}

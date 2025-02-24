@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/css/iniciarSesionStyles.css" />
+        <link rel="stylesheet" href="/static/css/mensajesIniciarSesion.css" />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Iniciar sesión</title>
+        <link rel="icon" href="/static/img/logo.png" />
+    </head>
+    <body>
+        <div class="colores">
+            <div class="primer-contenedor">
+                <a href="../index.php" class="btn-imagen">
+                    <img
+                        src="/static/img/flecha-png.png"
+                        alt="Botón con imagen"
+                    />
+                </a>
+            </div>
+
+            <div class="segundo-contenedor"></div>
+        </div>
+
+        <div class="centrado-carta">
+            <form class="card" method="POST" action="iniciarSesion.php">
+                <img
+                    class="img-user"
+                    src="/static/img/perfil-de-usuario.webp"
+                    alt="usr"
+                />
+                <input
+                    type="text"
+                    name="usuario"
+                    placeholder="Usuario"
+                    class="input texto"
+                    id="myInput"
+                />
+                <input
+                    type="password"
+                    name="contrasena"
+                    placeholder="Contraseña"
+                    class="input contrasena"
+                />
+                <input class="btn-iniciarSesion" type="submit" />
+                <div class="enlaces">
+                    <a>¿No tienes una cuenta?</a>
+                    <a href="../registrarse.php">Registrarse</a>
+                    <a href="../recuperarContra.php"
+                        >¿Olvidaste tu Contraseña?</a
+                    >
+                </div>
+            </form>
+        </div>
+
+        <!-- <script src="/js/scripts1.js"></script> -->
+    </body>
+</html>

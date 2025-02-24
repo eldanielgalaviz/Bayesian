@@ -1,0 +1,142 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: Arial, Helvetica;
+   background: #203647;
+ }
+ 
+
+ 
+ /******FONDO*****/
+ .fondo {
+  width: 100%;
+  max-width: 1135px;
+  height: auto;
+  margin: 0 auto;
+  background: #EEFBFB;
+  border-radius: 24px;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar los elementos horizontalmente */
+  }
+  
+  .fondo h1 {
+  width: 237px;
+  height: 70px;
+  font-style: initial;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 70px;
+  color: #000000;
+  margin-top: 30px;
+  }
+  
+  .divs {
+  width: 100%;
+  max-width: 450px;
+  
+  border: 3px solid #4DA8DA;
+  border-radius: 24px;
+  margin-top: 30px;
+  padding: 5px;
+  }
+  
+  .divs p {
+  margin-top: 10px;
+  font-size: 20px;
+  }
+  
+  aside {
+  width: 100%;
+  max-width: 540px;
+  border: 3px solid #4DA8DA;
+  border-radius: 24px;
+  margin-top: 30px;
+  padding: 20px;
+  }
+  
+  aside h2 {
+  width: 400px;
+  height: 28px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+  }
+  
+  aside ul {
+  list-style: none;
+  padding-left: 0;
+  }
+  
+  aside li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  }
+  
+  aside li:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #4DA8DA;
+  border-radius: 50%;
+  margin-right: 10px;
+  }
+  
+  aside a {
+  text-decoration: none;
+  color: #000000;
+  }
+
+/******FOOTER********/
+footer {
+  background-color: #007CC7;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.volver {
+  margin-left: auto;
+}
+
+/*
+@media (max-width: 768px) {
+   .fondo {
+     padding: 10px;
+   }
+ 
+   .divs {
+     grid-template-columns: 1fr;
+   }
+ 
+   .divs p {
+     font-size: 24px;
+     line-height: 24px;
+   }
+ }
+*/
+ 

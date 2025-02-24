@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../static/css/registrarsePt1Styles.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registrarse</title>
+        <link rel="icon" href="/static/img/logo.png" />
+    </head>
+    <body>
+        <div class="colores">
+            <div class="primer-contenedor">
+                <a href="../iniciarSesion.php" class="btn-imagen">
+                    <img
+                        src="../static/img/flecha-png.png"
+                        alt="Botón con imagen"
+                    />
+                </a>
+            </div>
+
+            <div class="segundo-contenedor"></div>
+        </div>
+
+        <div class="centrado-carta">
+            <form class="card" method="POST" action="../registrarsePt2.php">
+                <img
+                    class="img-user"
+                    src="../static/img/perfil-de-usuario.webp"
+                    alt="usr"
+                />
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Nombres"
+                    class="input nombre"
+                />
+                <input
+                    type="text"
+                    name="apellido"
+                    placeholder="Apellidos"
+                    class="input apellido"
+                />
+                <input
+                    type="number"
+                    name="edad"
+                    placeholder="Edad"
+                    class="input edad"
+                    min="18"
+                    max="100"
+                    id="edad"
+                />
+                <div class="custom-combobox">
+                    <input
+                        type="text"
+                        name="genero"
+                        class="input input-field genero"
+                        placeholder="Género"
+                        readonly
+                        value="masculino"
+                    />
+                    <ul class="options-list">
+                        <li>masculino</li>
+                        <li>femenino</li>
+                    </ul>
+                </div>
+
+                <input id="btnSiguiente" type="submit" class="btn" />
+            </form>
+        </div>
+
+        <script src="../static/js/scripts1.js"></script>
+    </body>
+</html>

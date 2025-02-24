@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="../static/css/registrarsePt2Styles.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registrarse</title>
+		<link rel="icon" href="/static/img/logo.png" />
+	</head>
+	<body>
+		<div class="colores">
+			<div class="primer-contenedor">
+				<a href="../registrarse.php" class="btn-imagen">
+					<img src="../static/img/flecha-png.png" alt="Botón con imagen" />
+				</a>
+			</div>
+
+			<div class="segundo-contenedor"></div>
+		</div>
+
+		<div class="centrado-carta">
+			<form class="card" method="post" action="../registrarsePt2.php">
+				<img
+					class="img-user"
+					src="../static/img/perfil-de-usuario.webp"
+					alt="usr"
+				/>
+				<input
+					type="text"
+					name="usuario"
+					placeholder="Usuario"
+					class="input usuario"
+				/>
+				<input
+					type="password"
+					name="contrasena"
+					placeholder="Contraseña"
+					class="input contra"
+				/>
+				<img src="/static/img/view.png" class="icono" hide="true" />
+				<input
+					type="password"
+					name="confirmarContrasena"
+					placeholder="Confirmar Contraseña"
+					class="input contra-confirmar"
+				/>
+				<input
+					type="text"
+					name="email"
+					placeholder="E-mail"
+					class="input correo"
+				/>
+
+				<input id="btnSiguiente2" type="submit" class="btn" />
+			</form>
+		</div>
+
+		<script src="../static/js/scripts2.js"></script>
+	</body>
+</html>
